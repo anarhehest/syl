@@ -6,11 +6,11 @@ from cli.syllables import process_text
 st.title('Syl The Sightless')
 st.write('Input text to break it into syllables.')
 
-lang = st.selectbox('Language', ['ru', 'en'])
+lang = st.selectbox('Choose a language', ['ru', 'en'])
 
 p = Pyphen(lang=lang)
 
-text = st.text_area('Enter your text')
+text = st.text_area('Enter your text here')
 
 
 def format_output(processed):
